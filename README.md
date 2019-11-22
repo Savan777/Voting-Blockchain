@@ -50,12 +50,12 @@ A Hyperledger Fabric blockchain network to cast votes
     <ul>
       <li>Open a terminal in there and run the command:<code>./startFabric.sh</code></li>
     </ul>
-  <li>Go to voting-app-network folder</li>
+  <li>Go to voting-blockchain folder</li>
     <ul>
       <li>Open a new terminal in there and run the command:<code>composer network install --archiveFile voting-app-network@0.1.0.bna --card PeerAdmin@hlfv1</code></li>
       <li>To deploy the network now run the command:<code>composer network start --networkName voting-app-network --networkVersion 0.1.0 --networkAdmin admin --networkAdminEnrollSecret adminpw --card PeerAdmin@hlfv1 --file voting-app-admin.card</code></li>
     </ul>
- <li>To start the Rest Server open a new terminal in voting-app-network folder</li>
+ <li>To start the Rest Server open a new terminal in voting-blockchain folder</li>
     <ul><li>Run the command:<code>composer-rest-server -c admin@voting-app-network -n never -u true -w true</code></li></ul>
   <li>Go to the voting-angular-app and open a new terminal</li>
     <ul><li>Run the command:<code>npm start</code></li></ul>
