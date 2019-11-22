@@ -1,0 +1,29 @@
+/**
+ * Write your model definitions here
+ */
+
+namespace org.byke.voting
+
+asset ifVoted identified by voterID {
+  o String voterID
+  o Boolean votedOrNot
+}
+
+asset candidateVote identified by politicalParty {
+  o String politicalParty
+  o Integer totalVote
+}
+
+participant voter identified by voterID {
+  o String voterID
+  o String fullName
+}
+
+transaction vote {
+  --> candidateVote candidateVoteAsset
+  --> ifVoted ifVotedAsset
+}
+
+event VoteNotification {
+  --> candidateVote candidateVoteAsset
+}
