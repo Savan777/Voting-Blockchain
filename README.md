@@ -15,20 +15,30 @@ A Hyperledger Fabric blockchain network to cast votes
 <div>
 <p>Next install the following tools:</p>
 <code>npm install -g composer-cli</code>
+  
 <code>npm install -g composer-rest-server</code>
+
 <code>npm install -g composer-playground</code>
+
 <code>npm install -g yo generator-hyperledger-composer</code>
 </div>
 
 <div>  
 <p>Run the following commands to install the local Hyperledger Fabric runtime:</p>
 <code>mkdir ~/fabric-dev-servers</code>
+  
 <code>cd ~/fabric-dev-servers</code>
+
 <code>curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.tar.gz</code>
+
 <code>tar -xvf fabric-dev-servers.tar.gz</code>
+
 <code>export FABRIC_VERSION=hlfv12</code>
+
 <code>./downloadFabric.sh</code>
+
 <code>./startFabric.sh</code>
+
 <code>./createPeerAdminCard.sh</code>
 </div> 
   
